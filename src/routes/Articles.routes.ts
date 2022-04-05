@@ -1,11 +1,12 @@
 import { Router } from 'express';
+import ArticlesController from '../controllers/ArticlesController';
 
 const routes = Router();
 
-routes.post('/');
-routes.get('/articles/');
-routes.get('/articles/:id');
-routes.put('/articles/:id');
-routes.delete('/articles/:id');
+routes.post('/', ArticlesController.store);
+routes.get('/', ArticlesController.index);
+routes.get('/:id', ArticlesController.show);
+routes.put('/:id', ArticlesController.update);
+routes.delete('/:id', ArticlesController.delete);
 
 export default routes;
