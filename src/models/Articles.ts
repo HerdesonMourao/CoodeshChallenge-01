@@ -20,7 +20,7 @@ class Articles {
   @Column()
   newsSite: string;
 
-  @Column()
+  @Column('longtext')
   summary: string;
 
   @CreateDateColumn()

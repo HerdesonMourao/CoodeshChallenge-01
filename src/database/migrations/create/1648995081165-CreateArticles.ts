@@ -41,7 +41,7 @@ export class CreateArticles1648995081165 implements MigrationInterface {
           },
           {
             name: "summary",
-            type: "varchar",
+            type: "longtext",
             isNullable: false,
           },
           {
